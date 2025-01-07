@@ -1,0 +1,224 @@
+/*Custom properties*/
+
+:root {
+    /* Colores */
+
+    --blanco: #fff;
+
+    
+    --grisClaro2: hsl(30, 18%, 87%);
+    --gris: hsl(30, 10%, 34%);
+    --grisOscuro: hsl(24, 5%, 18%);
+
+    --marronClaro: hsl(30, 54%, 90%);
+    --marron: hsl(14, 45%, 36%);
+    
+    --rosaClaro: hsl(330, 100%, 98%);
+    --rosaOscuro: hsl(332, 51%, 32%);
+
+    /* Fuentes */
+    --fuentePrincipal: "Outfit", sans-serif;
+    --fuenteSecundaria: "Young Serif", sans-serif;
+}
+
+/* Globales */
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,*:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: var(--fuentePrincipal);
+    font-size: 1.6rem;
+    line-height: 1.8;
+    color: var(--gris);
+    background-color: var(--marronClaro);
+}
+
+h1, h2, h3 {
+    font-family: var(--fuenteSecundaria);
+    font-weight: 700;
+    margin: 2rem 0;
+    color: var(--grisOscuro);
+    line-height: 1;
+}
+h1 {
+    font-size: 4.8rem;
+}
+h2 {
+    font-size: 3.8rem;
+    color: var(--marron);
+}
+h3 {
+    font-size: 2.4rem;
+    font-family: var(--fuentePrincipal);
+    color: var(--rosaOscuro)
+}
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+@media (min-width: 768px) { 
+    img {
+        border-radius: 1.5rem;
+    }
+}
+.contenedor {
+    margin: 0 auto;
+    width: 100%;
+    background-color: var(--blanco);
+}
+
+@media (min-width: 768px) { 
+    .contenedor {
+        max-width: 80rem;
+        margin: 10rem auto;
+        background-color: var(--blanco);
+        border-radius: 2rem;
+    }
+}
+
+ul, ol {
+    padding-left: 2rem;
+}
+
+ul {
+    list-style-type: square;
+}
+
+li {
+    padding-left: 2rem;
+    font-size: 1.6rem;
+}
+
+/* sección: receta */
+.receta-contenido {
+    padding: 3rem;
+}
+
+@media (min-width: 768px) { 
+    .receta-contenido {
+        margin-top: 4rem;
+        padding: 0;
+    }
+}
+
+@media (min-width: 768px) { 
+    .receta {
+        padding: 5rem;
+    }
+}
+
+.receta-descripcion {
+    margin: 2rem 0;
+}
+
+/* sección: preparación */
+
+.preparacion {
+    background-color: var(--rosaClaro);
+    border-radius: 1rem;
+    padding: 1.5rem 0 1.5rem 2rem;
+    margin: 3rem 0;
+}
+
+.preparacion span {
+    font-weight: 700;
+}
+
+.preparacion li::marker {
+    color: var(--rosaOscuro);
+    font-size: 1.4rem;
+}
+
+/* seccion: ingredientes */
+
+.ingredientes {
+    margin-top: 3rem;
+    padding-bottom: 1rem; 
+    border-bottom: 1px solid var(--grisClaro2);
+}
+
+.ingredientes li::marker {
+    color: var(--marron);
+    font-size: 1.4rem;
+}
+
+/* sección: instrucciones */
+
+.instrucciones {
+    margin-top: 3rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--grisClaro2);
+}
+
+.instrucciones li::marker {
+    color: var(--marron);
+    font-weight: 900;
+}
+
+.instrucciones span {
+    font-weight: 900;
+}
+
+/* sección: nutrición */ 
+
+.nutricion {
+    margin-top: 3rem;
+}
+
+table {
+    width: 100%;
+}
+
+td {
+    width: 50%;
+    padding: 0.5rem 2rem;
+    border-bottom: 1px solid var(--grisClaro2);
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+.tabla-valor {
+    font-weight: 900;
+    color: var(--marron);
+}
+
+/* attribution */
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    background-color: var(--blanco);
+}
+
+@media (min-width: 768px) { 
+    .attribution {
+        background-color: var(--marronClaro);
+    }
+}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
